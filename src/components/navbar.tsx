@@ -13,7 +13,10 @@ export const Navbar = ()=>{
 
     return <div>
         <Link to='/'>Home</Link>
-        <Link to='/login'>Login</Link>
+        {
+        !user ? <Link to='/login'>Login</Link> :
+        <Link to='/createpost'>Create Post</Link>
+        }       
 
         <div>
             {user && 
