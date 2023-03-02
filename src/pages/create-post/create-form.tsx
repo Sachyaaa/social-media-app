@@ -15,7 +15,7 @@ interface CreateFormData {
 export const CreateForm = () =>{
 
     const [user] =useAuthState(auth);
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
 
     const schema = yup.object().shape({
